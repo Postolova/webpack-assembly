@@ -1,7 +1,8 @@
 import './index.scss';
-import './assets/js/common';
+import './assets/js/hero';
 
-const arr = () => {
-  console.log('into index.js');
-};
-arr();
+// For All SVG
+function requireAll(r) {
+  r.keys().forEach(r);
+}
+requireAll(require.context('./assets/images/svg/', true, /\.svg$/));

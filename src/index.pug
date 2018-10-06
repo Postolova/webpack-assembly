@@ -1,3 +1,5 @@
+include ./assets/views/common/_mixins
+<!DOCTYPE html>
 html(lang="en")
   head
     meta(charset="UTF-8")
@@ -5,5 +7,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title webpack4
   body
-    h1 index.pug
-    include ./assets/views/sections/hero
+    .wrapper
+      //- include ./assets/views/sections/header.pug
+      main.main
+        include ./assets/views/sections/hero

@@ -54,13 +54,13 @@ module.exports = merge(common, {
         ]
       },
       {
-        test: /\.(gif|jpe?g|png|svg|webp)$/,
+        test: /\.(gif|jpe?g|png|webp)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: 'assets/images/[name].[ext]',
-              outputPath: 'images/'
+              name: 'images/[name].[ext]',
+              outputPath: 'assets/'
             }
           },
           {
